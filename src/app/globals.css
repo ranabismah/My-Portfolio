@@ -1,33 +1,51 @@
+/* global.css */
+
+/* Tailwind Directives */
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
-}
+/* Custom Base Styles */
+@layer base {
+  /* Custom Heading Styles */
+  .h1 {
+    @apply text-[48px] xl:text-[80px] leading-[1.1] font-semibold;
+  }
+  
+  .h2 {
+    @apply text-[36px] xl:text-[48px] leading-[1.1] font-semibold;
+  }
+  
+  .h3 {
+    @apply text-[20px] xl:text-[24px] leading-[1.1] font-semibold;
+  }
+  
+  /* Custom Text Outline Styles */
+  .text-outline {
+    -webkit-text-stroke: 1px #ffffff; 
+  }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
+  .text-outline-hover {
+    -webkit-text-stroke: 1px #281b99; 
   }
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
-}
+/* Global Styles */
+html, body {
+  height: 100%; 
+  
+  /* Fallback background color */
+  background-color: #3e087c; 
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
+  /* Background image settings */
+  background-image: url('/assets/image.jpg');
+  background-size: cover; 
+  background-position: center; 
+  background-attachment: fixed; 
+  
+  /* Fallback for mobile browsers where background-attachment: fixed might not work */
+  @supports not (background-attachment: fixed) {
+    background-attachment: scroll;
   }
 }
+
