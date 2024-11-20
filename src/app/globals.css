@@ -30,13 +30,13 @@
   }
 }
 
-/* global.css */
+
 
 html, body {
   height: 100%; 
 
   /* Background image settings */
-  background-image: url('/image.jpg'); /* No need for '/assets' */
+  background-image: url('public/image.JPG'); /* Public folder me image.JPG ka path */
   background-size: cover; 
   background-position: center; 
   background-attachment: fixed; 
@@ -46,4 +46,5 @@ html, body {
     background-attachment: scroll;
   }
 }
+
 
