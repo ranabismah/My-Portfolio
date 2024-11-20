@@ -26,7 +26,7 @@ const Stairs: React.FC = () => {
       initial="initial"
       animate="animate"
       exit="exit"
-      className="absolute top-0 left-0 w-full h-full bg-gradient-to-tr from-blue-200 via-blue-400 to-blue-600 bg-[length:400%_400%] z-40"
+      className="absolute top-0 left-0 w-full h-full bg-gradient-to-tr from-blue-300 via-blue-500 to-blue-700 bg-[length:400%_400%] z-40"
     />
   );
 };

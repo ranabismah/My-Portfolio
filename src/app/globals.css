@@ -26,22 +26,21 @@
   }
 
   .text-outline-hover {
-    -webkit-text-stroke: 1px #281b99; 
+    -webkit-text-stroke: 1px #3c2bcf; 
   }
 }
 
-/* Global Styles */
+/* global.css */
+
 html, body {
   height: 100%; 
-  
-  
 
   /* Background image settings */
-  background-image: url('/assets/image.jpg');
+  background-image: url('/image.jpg'); /* No need for '/assets' */
   background-size: cover; 
   background-position: center; 
   background-attachment: fixed; 
-  
+
   /* Fallback for mobile browsers where background-attachment: fixed might not work */
   @supports not (background-attachment: fixed) {
     background-attachment: scroll;

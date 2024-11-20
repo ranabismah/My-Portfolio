@@ -13,7 +13,7 @@ const StairTransition: React.FC = () => {
         <div className="h-screen w-screen fixed top-0 left-0 right-0 pointer-events-none z-40 flex">
           <Stairs />
           <motion.div
-            className="h-screen w-screen fixed bg-blue-950 top-0 pointer-events-none"
+            className="h-screen w-screen fixed  top-0 pointer-events-none"
             initial={{ opacity: 1 }}
             animate={{
               opacity: 0,
