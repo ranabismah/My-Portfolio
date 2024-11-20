@@ -39,9 +39,9 @@ const Projects: React.FC = () => {
       className="py-16"
     >
       <div className="container mx-auto text-center mb-16">
-        <h2 className="text-4xl text-blue-950 font-bold mb-8">My Projects</h2>
+        <h2 className="text-5xl sm:text-6xl font-extrabold text-gray-900 mb-4">My Projects</h2>
         <motion.div
-          className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 gap-8"
+          className="grid grid-cols-1 my-5 sm:grid-cols-2 md:grid-cols-2 gap-8"
           initial={{ opacity: 0 }}
           animate={{ opacity: 1, transition: { delay: 0.5, duration: 0.8, ease: "easeInOut" } }}
         >

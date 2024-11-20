@@ -86,7 +86,7 @@ const Contact: React.FC = () => {
       className="py-16 px-6"
     >
       <div className="container mx-auto text-center mb-6">
-        <h1 className="text-5xl text-blue-600 font-bold">Contact Me</h1>
+        <h1 className="text-5xl sm:text-6xl font-extrabold text-gray-900 mb-4">Contact Me</h1>
         <p className="text-xl text-primary mt-4">Feel free to reach out for collaborations or inquiries!</p>
       </div>
 

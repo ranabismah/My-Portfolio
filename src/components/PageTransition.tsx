@@ -2,9 +2,8 @@
 import { AnimatePresence, motion } from "framer-motion";
 import { usePathname } from "next/navigation";
 
-// Type definition for the props
 interface PageTransitionProps {
-  children: React.ReactNode; 
+  children: React.ReactNode;
 }
 
 const PageTransition: React.FC<PageTransitionProps> = ({ children }) => {

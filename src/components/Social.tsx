@@ -1,35 +1,43 @@
-import Link from "next/link";
-import { FaGithub, FaLinkedinIn } from "react-icons/fa";
-import { MdEmail } from "react-icons/md";
+"use client";
+import { FaGithub, FaLinkedin } from "react-icons/fa";
+import { motion } from "framer-motion";
 
-// Type definition for the social items
-interface SocialItem {
-  icon: JSX.Element;
-  path: string;
-}
-
-// Props for the Social component
 interface SocialProps {
-  containerStyles: string;
-  iconStyles: string;
+  containerStyles?: string;
+  iconStyles?: string;
 }
-
-const socials: SocialItem[] = [
-  { icon: <FaGithub />, path: "https://github.com/ranabismah" },
-  { icon: <FaLinkedinIn />, path: "https://www.linkedin.com/in/rana-bisma-qasim-537bab2bb" },
-  { icon: <MdEmail />, path: "mailto:ranabismah178@gmail.com" },
-];
 
 const Social: React.FC<SocialProps> = ({ containerStyles, iconStyles }) => {
   return (
-    <div className={containerStyles}>
-      {socials.map((item, index) => (
-        <Link key={index} href={item.path} className={iconStyles}>
-          {item.icon}
-        </Link>
-      ))}
-    </div>
+    <motion.div
+      initial={{ opacity: 0 }}
+      animate={{
+        opacity: 1,
+        transition: { delay: 2, duration: 0.8, ease: "easeInOut" },
+      }}
+      className={containerStyles || "flex justify-center gap-8 mt-8"}
+    >
+      <a
+        href="https://github.com/ranabismah"
+        target="_blank"
+        rel="noopener noreferrer"
+        className={`${iconStyles} text-blue-800 hover:text-blue-600 transition-all duration-300`}
+        aria-label="GitHub"
+      >
+        <FaGithub size={30} />
+      </a>
+      <a
+        href="https://www.linkedin.com/in/rana-bisma-qasim-537bab2bb"
+        target="_blank"
+        rel="noopener noreferrer"
+        className={`${iconStyles} text-blue-800 hover:text-blue-600 transition-all duration-300`}
+        aria-label="LinkedIn"
+      >
+        <FaLinkedin size={30} />
+      </a>
+    </motion.div>
   );
 };
 
 export default Social;
+

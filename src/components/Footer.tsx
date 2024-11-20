@@ -1,5 +1,5 @@
 "use client";
-import { FaGithub, FaLinkedin, } from "react-icons/fa";
+import { FaGithub, FaLinkedin } from "react-icons/fa";
 import { motion } from "framer-motion";
 
 const Footer: React.FC = () => {
@@ -13,13 +13,11 @@ const Footer: React.FC = () => {
       className="bg-gray-900 text-white py-12 mt-16"
     >
       <div className="container mx-auto text-center px-6">
-        {/* Footer Header */}
         <h3 className="text-2xl font-semibold text-blue-600 mb-4">Let's Connect</h3>
         <p className="text-white/60 text-lg mb-8">
           I&apos;m open to new opportunities. Let&apos;s chat or collaborate!
         </p>
 
-        {/* Social Media Links */}
         <div className="flex justify-center gap-8 mb-8">
           <a
             href="https://github.com/ranabismah"
@@ -39,10 +37,8 @@ const Footer: React.FC = () => {
           >
             <FaLinkedin size={28} />
           </a>
-          
         </div>
 
-        {/* Copyright Notice */}
         <p className="text-sm text-white/60">
           &copy; {new Date().getFullYear()} Rana Bisma. All Rights Reserved.
         </p>

@@ -2,9 +2,8 @@
 import { motion } from "framer-motion";
 import Image from "next/image";
 
-// Define the types for the props
 interface PhotoProps {
-  className?: string;  
+  className?: string;
 }
 
 const Photo: React.FC<PhotoProps> = ({ className }) => {
@@ -18,7 +17,6 @@ const Photo: React.FC<PhotoProps> = ({ className }) => {
         }}
         className="flex justify-center items-center"
       >
-        {/* Profile image motion animation */}
         <motion.div
           initial={{ opacity: 0 }}
           animate={{
@@ -27,14 +25,13 @@ const Photo: React.FC<PhotoProps> = ({ className }) => {
           }}
           className="relative w-[250px] h-[250px] xl:w-[400px] xl:h-[400px] rounded-full overflow-hidden"
         >
-          {/* Animated Border */}
           <motion.div
             initial={{ opacity: 0, scale: 0.9 }}
             animate={{
               opacity: 1,
               scale: 1,
-              borderColor: "rgb(17, 24, 39)", 
-              boxShadow: "0 0 20px rgba(17, 24, 39, 0.3)", 
+              borderColor: "rgb(17, 24, 39)",
+              boxShadow: "0 0 20px rgba(17, 24, 39, 0.3)",
               transition: {
                 delay: 1.6,
                 duration: 0.6,
@@ -45,11 +42,9 @@ const Photo: React.FC<PhotoProps> = ({ className }) => {
               },
             }}
             className="absolute inset-0 border-4 border-transparent rounded-full group-hover:border-blue-950 group-hover:scale-105 group-hover:shadow-lg transition-all duration-500 ease-in-out"
-          ></motion.div>
-
-          {/* Profile Image */}
+          />
           <Image
-            src="/assets/photo.JPG" 
+            src="/assets/photo.JPG"
             alt="Profile Photo"
             width={400}
             height={400}

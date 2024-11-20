@@ -1,17 +1,14 @@
 "use client";
-
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
 import { usePathname } from "next/navigation";
 import Link from "next/link";
 import { CiMenuFries } from "react-icons/ci";
 
-// Define the type for each link
 interface LinkItem {
   name: string;
   path: string;
 }
 
-// Type the links array
 const links: LinkItem[] = [
   { name: "home", path: "/" },
   { name: "about", path: "/about" },
@@ -29,7 +26,6 @@ const MobileNav: React.FC = () => {
         <CiMenuFries className="text-[32px] text-blue-100" />
       </SheetTrigger>
       <SheetContent className="flex flex-col">
-        {/* Logo */}
         <div className="mt-32 mb-40 text-center text-2xl">
           <Link href="/">
             <h1 className="text-4xl font-semibold">
@@ -38,16 +34,14 @@ const MobileNav: React.FC = () => {
           </Link>
         </div>
 
-        {/* Navigation */}
         <nav className="flex flex-col justify-center items-center gap-8">
           {links.map((link, index) => (
             <Link
               href={link.path}
               key={index}
               className={`${
-                link.path === pathname && "text-blue-800 border-b-2 border-blue-800"
-              }
-                text-xl capitalize hover:text-blue-800 transition-all`}
+                link.path === pathname ? "text-blue-800 border-b-2 border-blue-800" : ""
+              } text-xl capitalize hover:text-blue-800 transition-all`}
             >
               {link.name}
             </Link>

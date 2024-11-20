@@ -1,4 +1,3 @@
-// src/app/page.tsx
 import { Button } from "@/components/ui/button";
 import { FiDownload } from "react-icons/fi";
 import About from "./about/page";
@@ -7,8 +6,6 @@ import Social from "@/components/Social";
 import Photo from "@/components/Photo";
 import Skills from "./skills/page";
 import Projects from "./projects/page";
-
-
 
 const Home: React.FC = () => {
   return (
@@ -54,14 +51,14 @@ const Home: React.FC = () => {
 
       {/* Sections */}
       <div>
-        <About/>
-        <Skills/>
-        <Projects/>
-        <Contact/>
-        
+        <About />
+        <Skills />
+        <Projects />
+        <Contact />
       </div>
     </section>
   );
 };
 
 export default Home;
+
