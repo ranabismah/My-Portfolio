@@ -28,6 +28,20 @@ const projects: Project[] = [
     liveLink: "https://portfolio-by-custom-css.vercel.app/",
     image: "/assets/port.JPG",
   },
+  {
+    title: "Project Three",
+    description: "A blog website on next.js by applying Tailwind-css.",
+    githubLink: "https://github.com/ranabismah/milestone3-assignment-blog.git",
+    liveLink: "https://milestone3-assignment-blog-eight.vercel.app/",
+    image: "/assets/blog.JPG",
+  },
+  {
+    title: "Project Four",
+    description: "A portfolio website on next.js by applying Tailwind-css.",
+    githubLink: "https://github.com/ranabismah/Hackathon2.git",
+    liveLink: "https://hackathon2-beryl.vercel.app/",
+    image: "/assets/figma-design.JPG",
+  },
   
 ];
 
@@ -41,7 +55,7 @@ const Projects: React.FC = () => {
       <div className="container mx-auto text-center mb-16">
         <h2 className="text-5xl sm:text-6xl font-extrabold text-gray-900 mb-4">My Projects</h2>
         <motion.div
-          className="grid grid-cols-1 my-5 sm:grid-cols-2 md:grid-cols-2 gap-8"
+          className="grid grid-cols-1 my-5 sm:grid-cols-2 md:grid-cols-3 gap-8"
           initial={{ opacity: 0 }}
           animate={{ opacity: 1, transition: { delay: 0.5, duration: 0.8, ease: "easeInOut" } }}
         >
