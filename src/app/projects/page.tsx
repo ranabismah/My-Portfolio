@@ -47,14 +47,14 @@ const projects: Project[] = [
     description: "a Tech fun New Year countdown with an exciting fireworks display 🎇 and a cool theme toggle feature! 🌓 🌞 As the countdown ticks away.",
     githubLink: "https://github.com/ranabismah/Happy-New-Year.git",
     liveLink: "https://happy-new-year-delta-seven.vercel.app/",
-    image: "/assets/figma-design.JPG",
+    image: "/assets/coundown.JPG",
   },
   {
     title: "E-comerce",
     description: "E-comerce website, dynamic + add to cart functionality + order slip functiionality.",
     githubLink: "https://github.com/ranabismah/e-comerce.git",
     liveLink: "https://e-comerce-weld.vercel.app/",
-    image: "/assets/figma-design.JPG",
+    image: "/assets/ecom.JPG",
   },
   
 ];
