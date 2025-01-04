@@ -15,31 +15,45 @@ interface Project {
 
 const projects: Project[] = [
   {
-    title: "Project One",
+    title: "Resume Builder",
     description: "A resume builder hepls to create a resume in short time.",
     githubLink: "https://github.com/ranabismah/hackathon-milestone5.git",
     liveLink: "https://hackathon-milestone5-nine-iota.vercel.app/",
     image: "/assets/resume.JPG",
   },
   {
-    title: "Project Two",
+    title: "Portfolio web by custom css",
     description: "A portfolio website on next.js by applying custom-css.",
     githubLink: "https://github.com/ranabismah/Portfolio-by-Custom-CSS.git",
     liveLink: "https://portfolio-by-custom-css.vercel.app/",
     image: "/assets/port.JPG",
   },
   {
-    title: "Project Three",
-    description: "A blog website on next.js by applying Tailwind-css.",
+    title: "Novels Blog",
+    description: "a Blog Website for Novels using Next.js! 📚🎉 Key features: .Dynamic Book Pages with details and reading links .Comment Section for discussions .Responsive Design for all devices.",
     githubLink: "https://github.com/ranabismah/milestone3-assignment-blog.git",
     liveLink: "https://milestone3-assignment-blog-eight.vercel.app/",
     image: "/assets/blog.JPG",
   },
   {
-    title: "Project Four",
-    description: "A portfolio website on next.js by applying Tailwind-css.",
+    title: "E-comerce",
+    description: "This designed with a strong focus on both UI and UX for a seamless experience. I converted the Figma design into a Next.js project with the UI/UX implemented.  ",
     githubLink: "https://github.com/ranabismah/Hackathon2.git",
     liveLink: "https://hackathon2-beryl.vercel.app/",
+    image: "/assets/figma-design.JPG",
+  },
+  {
+    title: "New Year countdown",
+    description: "a Tech fun New Year countdown with an exciting fireworks display 🎇 and a cool theme toggle feature! 🌓 🌞 As the countdown ticks away.",
+    githubLink: "https://github.com/ranabismah/Happy-New-Year.git",
+    liveLink: "https://happy-new-year-delta-seven.vercel.app/",
+    image: "/assets/figma-design.JPG",
+  },
+  {
+    title: "E-comerce",
+    description: "E-comerce website, dynamic + add to cart functionality + order slip functiionality.",
+    githubLink: "https://github.com/ranabismah/e-comerce.git",
+    liveLink: "https://e-comerce-weld.vercel.app/",
     image: "/assets/figma-design.JPG",
   },
   
